@@ -3,11 +3,11 @@
 // accordion section
 
 document.querySelectorAll(".accordion").forEach((accordion) => {
-  accordion.addEventListener("click", () => {
-    const answer = accordion.querySelector(".answer");
-    const arrow = accordion.querySelector(".arrow");
+  accordion.addEventListener("click", function() {
+    const answer = this.querySelector(".answer");
+    const arrow = this.querySelector(".arrow");
 
-    accordion.classList.toggle("active");
+    this.classList.toggle("active");
     arrow.classList.toggle("active");
   });
 });
